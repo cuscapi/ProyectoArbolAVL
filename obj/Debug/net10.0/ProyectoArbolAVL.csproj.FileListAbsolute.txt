@@ -1,0 +1,14 @@
+D:\C#\ProyectoArbolAVL\bin\Debug\net10.0\ProyectoArbolAVL.exe
+D:\C#\ProyectoArbolAVL\bin\Debug\net10.0\ProyectoArbolAVL.deps.json
+D:\C#\ProyectoArbolAVL\bin\Debug\net10.0\ProyectoArbolAVL.runtimeconfig.json
+D:\C#\ProyectoArbolAVL\bin\Debug\net10.0\ProyectoArbolAVL.dll
+D:\C#\ProyectoArbolAVL\bin\Debug\net10.0\ProyectoArbolAVL.pdb
+D:\C#\ProyectoArbolAVL\obj\Debug\net10.0\ProyectoArbolAVL.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\ProyectoArbolAVL\obj\Debug\net10.0\ProyectoArbolAVL.AssemblyInfoInputs.cache
+D:\C#\ProyectoArbolAVL\obj\Debug\net10.0\ProyectoArbolAVL.AssemblyInfo.cs
+D:\C#\ProyectoArbolAVL\obj\Debug\net10.0\ProyectoArbolAVL.csproj.CoreCompileInputs.cache
+D:\C#\ProyectoArbolAVL\obj\Debug\net10.0\ProyectoArbolAVL.dll
+D:\C#\ProyectoArbolAVL\obj\Debug\net10.0\refint\ProyectoArbolAVL.dll
+D:\C#\ProyectoArbolAVL\obj\Debug\net10.0\ProyectoArbolAVL.pdb
+D:\C#\ProyectoArbolAVL\obj\Debug\net10.0\ProyectoArbolAVL.genruntimeconfig.cache
+D:\C#\ProyectoArbolAVL\obj\Debug\net10.0\ref\ProyectoArbolAVL.dll
