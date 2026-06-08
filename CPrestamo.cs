@@ -54,7 +54,7 @@ namespace ProyectoArbolAVL
             set => nroFicha = value;
         }
 
-        private int IdLecto
+        private int IdLector
         {
             get => idLector;
             set => idLector = value;

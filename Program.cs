@@ -16,19 +16,40 @@ namespace ProyectoArbolAVL
             int opcion2;
 
             // Objeto Menu principal
-            SumaqMenu menu1 = new SumaqMenu("MENU");
-            menu1.AgregarOpcion("Registrar un libro");
-            menu1.AgregarOpcion("Registrar lector");
-            menu1.AgregarOpcion("Registrar prestamo");
+            SumaqMenu menu1 = new SumaqMenu("MENU PRINCIPAL");
+            menu1.AgregarOpcion("Gestion de Libros");
+            menu1.AgregarOpcion("Gestion de Lectores");
+            menu1.AgregarOpcion("Gestion de Prestamos");
             menu1.AgregarOpcion("Reportes");
             menu1.AgregarOpcion("Salir");
 
+            // Objeto Menu Libros
+            SumaqMenu menu11 = new SumaqMenu("GESTION DE LIBROS");
+            menu11.AgregarOpcion("Agregar libro");
+            menu11.AgregarOpcion("Listar libros");
+            menu11.AgregarOpcion("Modificar libro");
+            menu11.AgregarOpcion("Eliminar libro");
+            
+            // Objeto Menu Lectores
+            SumaqMenu menu12 = new SumaqMenu("GESTION DE LECTORES");
+            menu12.AgregarOpcion("Agregar lector");
+            menu12.AgregarOpcion("Listar lector");
+            menu12.AgregarOpcion("Modificar lector");
+            menu12.AgregarOpcion("Eliminar lector");
+
+            // Objeto Menu Prestamos
+            SumaqMenu menu13 = new SumaqMenu("GESTION DE PRESTAMOS");
+            menu13.AgregarOpcion("Agregar prestamo");
+            menu13.AgregarOpcion("Listar prestamos");
+            menu13.AgregarOpcion("Modificar prestamo");
+            menu13.AgregarOpcion("Eliminar prestamo");
+                        
             // Objeto Menu de reportes
-            SumaqMenu menu2 = new SumaqMenu("REPORTES");
-            menu2.AgregarOpcion("Listar libros por especialidad");
-            menu2.AgregarOpcion("Listar prestamos que aún no tienen fecha de devolución del préstamo");
-            menu2.AgregarOpcion("Listar lectores que tengan pendiente la devolucion de algún libro");
-            menu2.AgregarOpcion("Salir");
+            SumaqMenu menu14 = new SumaqMenu("REPORTES");
+            menu14.AgregarOpcion("Listar libros por especialidad");
+            menu14.AgregarOpcion("Listar prestamos que aún no tienen fecha de devolución del préstamo");
+            menu14.AgregarOpcion("Listar lectores que tengan pendiente la devolucion de algún libro");
+            menu14.AgregarOpcion("Salir");
 
             // Objetos AVL
             cArbolAVL librosAVL = new cArbolAVL();
@@ -38,11 +59,11 @@ namespace ProyectoArbolAVL
             // Carga inicial de datos
             CargaLibros(librosAVL);
             CargaLectores(lectoresAVL);
-            CargaPrestamos(prestamosAVL);
+            CargaPrestamos(prestamosAVL, lectoresAVL, librosAVL);
 
             do
             {
-                Console.WriteLine("\nBLIBLIOTECA ESPECIALIZADA");
+                Console.WriteLine("\nBLIBLIOTECA ESPECIALIZADA UNSAAC");
                 menu1.MostrarMenu1();
                 Console.Write("<- Opcion: ");
                 opcion1 = int.Parse(Console.ReadLine()!);
@@ -50,19 +71,22 @@ namespace ProyectoArbolAVL
                 switch (opcion1)
                 {
                     case 1:
+                    	menu11.MostrarMenu1();
                         RegistrarLibro(librosAVL);
                         break;
                         
                     case 2:
+                    	menu12.MostrarMenu1();
                         RegistrarLectores(lectoresAVL);
                         break;
 
                     case 3:
+                    	menu13.MostrarMenu1();
                         RegistrarPrestamo(prestamosAVL, lectoresAVL, librosAVL);
                         break;
 
                     case 4:
-                        menu2.MostrarMenu1();
+                    	menu14.MostrarMenu1();
                         Console.Write("<- Opcion: ");
                         opcion2 = int.Parse(Console.ReadLine()!);
 
@@ -164,7 +188,7 @@ namespace ProyectoArbolAVL
         }
 
         // 1.3. Carga de prestamos
-        static void CargaPrestamos(cArbolAVL arbol)
+        static void CargaPrestamos(cArbolAVL arbol1, cArbolAVL arbol2, cArbolAVL arbol3)
         {
             CPrestamo p1  = new CPrestamo(1, 1, 1,  "01/06/2026", "08/06/2026");
             CPrestamo p2  = new CPrestamo(2, 2, 2,  "02/06/2026", "09/06/2026");
@@ -177,16 +201,16 @@ namespace ProyectoArbolAVL
             CPrestamo p9  = new CPrestamo(9, 9, 9,  "09/06/2026", "16/06/2026");
             CPrestamo p10 = new CPrestamo(10, 10, 10, "10/06/2026", "17/06/2026");
 
-            arbol.Agregar(p1);
-            arbol.Agregar(p2);
-            arbol.Agregar(p3);
-            arbol.Agregar(p4);
-            arbol.Agregar(p5);
-            arbol.Agregar(p6);
-            arbol.Agregar(p7);
-            arbol.Agregar(p8);
-            arbol.Agregar(p9);
-            arbol.Agregar(p10);
+            arbol1.Agregar(p1);
+            arbol1.Agregar(p2);
+            arbol1.Agregar(p3);
+            arbol1.Agregar(p4);
+            arbol1.Agregar(p5);
+            arbol1.Agregar(p6);
+            arbol1.Agregar(p7);
+            arbol1.Agregar(p8);
+            arbol1.Agregar(p9);
+            arbol1.Agregar(p10);
         }
         #endregion
 
@@ -289,7 +313,6 @@ namespace ProyectoArbolAVL
                 return;
             }
             
-
         }
 
         #endregion
