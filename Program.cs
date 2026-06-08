@@ -279,13 +279,13 @@ namespace ProyectoArbolAVL
                 }
                 else
                 {
-                    Console.WriteLine("Error, ¡el libro ya existe! :( ...");
+                    Console.WriteLine("Error, ¡el no libro no existe! :( ...");
                     return;
                 }
             }
             else
             {
-                Console.WriteLine("Error, ¡el lector ya existe! :( ...");
+                Console.WriteLine("Error, ¡el lector no existe! :( ...");
                 return;
             }
             

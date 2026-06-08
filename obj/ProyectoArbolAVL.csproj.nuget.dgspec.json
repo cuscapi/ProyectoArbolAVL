@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\ProyectoArbolAVL\\ProyectoArbolAVL.csproj": {}
+    "/storage/emulated/0/C#/ProyectoArbolAVL/ProyectoArbolAVL.csproj": {}
   },
   "projects": {
-    "D:\\C#\\ProyectoArbolAVL\\ProyectoArbolAVL.csproj": {
+    "/storage/emulated/0/C#/ProyectoArbolAVL/ProyectoArbolAVL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\ProyectoArbolAVL\\ProyectoArbolAVL.csproj",
+        "projectUniqueName": "/storage/emulated/0/C#/ProyectoArbolAVL/ProyectoArbolAVL.csproj",
         "projectName": "ProyectoArbolAVL",
-        "projectPath": "D:\\C#\\ProyectoArbolAVL\\ProyectoArbolAVL.csproj",
-        "packagesPath": "C:\\Users\\uscapi\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\ProyectoArbolAVL\\obj\\",
+        "projectPath": "/storage/emulated/0/C#/ProyectoArbolAVL/ProyectoArbolAVL.csproj",
+        "packagesPath": "/data/data/com.termux/files/home/.nuget/packages/",
+        "outputPath": "/storage/emulated/0/C#/ProyectoArbolAVL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\uscapi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/data/data/com.termux/files/home/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -61,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/data/data/com.termux/files/usr/lib/dotnet/sdk/10.0.108/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
